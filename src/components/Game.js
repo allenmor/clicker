@@ -16,10 +16,12 @@ function Game() {
             prev += coinPerSecond
         )
      }, 1000);
+     // eslint-disable-next-line
   },[])
 
   useEffect(()=>{
       setCoin(prev => prev + coinPerSecond)
+      // eslint-disable-next-line
   },[num])
   return (
     <div className="coin-div">
